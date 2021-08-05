@@ -19,7 +19,7 @@ import io.swagger.annotations.ApiOperation;
 
 @Api(tags = "Read Employee",description = "Provides API's to read Employees")
 @RestController
-@RequestMapping(value= {"/read"})
+@RequestMapping(value= {"/Employee/read"})
 public class EmpReadController {
 	
 	@Autowired
