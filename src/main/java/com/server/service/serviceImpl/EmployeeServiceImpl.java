@@ -28,7 +28,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public Employee saveEmp(Employee emp) throws DatabaseException {
 		try {
 			Employee emp = dao.save(emp);
-
+			System.out.println("Employee  added");
 		} catch (DataAccessException e) {
 			throw new DatabaseException("Some issue with database!! "+e.getMessage());
 		}
